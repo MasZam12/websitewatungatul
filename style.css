@@ -1,0 +1,113 @@
+/* Reset and Body Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Menggeser menu ke kanan */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.sign-in-btn {
+    background-color: rgba(0, 255, 157, 0.781);
+    border: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sign-in-btn:hover {
+    background-color: #ddd;
+}
+
+/* Header Image */
+.header-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header-image img {
+    width: 1000px;
+    border-radius: 15px;
+    max-width: 1000px; /* Limit the max size of the image */
+    height: 400px;
+}
+
+/* Menu Container */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 530px;
+}
+
+.menu-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    flex: 0 0 auto;
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
