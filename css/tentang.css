@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  /* Body */
+  body {
+    background-color: rgba(162, 204, 196, 1);
+    color: black;
+    /*min-height: 3000px;*/
+  }
+  /* Navbar Awal */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+    background-color: rgb(255, 255, 255);
+  }
+  .navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Lobster Two";
+    font-style: italic;
+    color: black;
+  }
+  .navbar .navbar-nav a {
+    color: black;
+    font-size: 1rem;
+    font-family: "Raleway";
+    margin: 1.5rem;
+    font-weight: 500;
+  }
+  .navbar .navbar-nav a:hover {
+    color: blue;
+  }
+  .navbar .navbar-extra a {
+    color: black;
+  }
+  .navbar .navbar-extra a:hover {
+    color: blue;
+  }
+  .feather {
+    width: 30px;
+    height: 30px;
+  }
+  #hamburger-menu {
+    display: none;
+  }
