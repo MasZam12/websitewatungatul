@@ -3,243 +3,435 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward"
     />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <title>Website Warung Atul</title>
-    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="/css/home.css" />
+    <title>Document</title>
   </head>
   <body>
-    <nav class="navbar">
-      <a href="#" class="navbar-logo">Warung Atul</a>
-      <div class="navbar-nav">
-        <a href="#home">Home</a>
-        <a href="/html/menu.html">Menu</a>
-        <a href="/html/kontak.html">Kontak</a>
-        <a href="/html/tentang.html">Tentang Kami</a>
-      </div>
-      <div class="navbar-extra">
-        <a href="#" id="user" title="user">
-          <i data-feather="user"></i>
-        </a>
-        <a href="#" id="hamburger-menu" title="hamburger">
-          <i data-feather="menu"></i>
-        </a>
-      </div>
-    </nav>
-
-    <section class="main" id="home">
-      <main class="content">
-        <div class="text">
-          <h1 class="typing">Spesialis</h1>
-          <h1 class="fade-in1">Ayam & Bebek <span>Tulang Lunak</span></h1>
-          <p class="fade-in2">
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="navbar-logo">
+          <h2>Warung <span>Atul</span></h2>
+        </div>
+        <div class="navbar-nav">
+          <a href="#home">Home</a>
+          <a href="#produk">Produk</a>
+          <a href="#about">Tentang Kami</a>
+          <a href="#review">Ulasan</a>
+          <a href="#contact">Kontak</a>
+        </div>
+        <div class="navbar-extra">
+          <div class="input-grup">
+            <i data-feather="search" class="icon"></i>
+            <input type="text" placeholder="Cari" />
+          </div>
+          <a href="#" class="menu" id="menu" title="menu">
+            <i data-feather="menu"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- Header -->
+    <!-- Main -->
+    <main>
+      <section class="home" id="home">
+        <div class="text reveal">
+          <h2 class="typing-effect">Spesialis</h2>
+          <h3>Ayam & Bebek <span>Tulang Lunak</span></h3>
+          <p>
             Warung Atul menyajikan ayam dan bebek tulang lunak yang dibumbui
             dengan bumbu-bumbu khas yang menggugah selera hingga ke tulang.
             Ciptakan momen makan berkesan-mu sekarang dengan harga yang
             terjangkau. Sempurna dinikmati bersama keluarga maupun teman!
           </p>
-          <div class="button">
-            <button class="button1">Lihat Menu</button>
-            <button class="button2">Pesan Sekarang</button>
+          <div class="button reveal">
+            <button class="to-menu">Lihat Menu</button>
+            <button class="to-order">Pesan Sekarang</button>
           </div>
         </div>
-        <div class="image">
-          <img src="/img/1-removebg-preview.png" title="logo" />
+        <div class="image reveal">
+          <img src="/img/ayam-removebg-preview.png" alt="" class="" />
         </div>
-      </main>
-    </section>
-
-    <section class="menu" id="menu">
-      <div class="row">
-        <h2>Menu Andalan Warung Atul</h2>
-      </div>
-      <div class="container">
-        <div class="swiper tranding-slider">
-          <div class="swiper-wrapper">
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img
-                  src="/img/tranding-food-1.png"
-                  alt="Tranding"
-                  class="tranding-img-small"
-                />
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img
-                  src="/img/tranding-food-2.png"
-                  alt="Tranding"
-                  class="tranding-img-small"
-                />
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img
-                  src="/img/tranding-food-3.png"
-                  alt="Tranding"
-                  class="tranding-img-small"
-                />
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img
-                  src="/img/tranding-food-4.png"
-                  alt="Tranding"
-                  class="tranding-img-small"
-                />
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img
-                  src="/img/tranding-food-5.png"
-                  alt="Tranding"
-                  class="tranding-img-small"
-                />
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img
-                  src="/img/tranding-food-6.png"
-                  alt="Tranding"
-                  class="tranding-img-small"
-                />
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img
-                  src="/img/tranding-food-7.png"
-                  alt="Tranding"
-                  class="tranding-img-small"
-                />
-              </div>
-            </div>
-            <!-- Slide-end -->
-          </div>
-
-          <div class="tranding-slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
-            </div>
-            <div class="swiper-button-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
+      </section>
+      <section class="produk" id="produk">
+        <div class="text reveal">
+          <h2>Menu Andalan Warung Atul</h2>
         </div>
-      </div>
-    </section>
-
-    <section class="rating">
-      <div class="rating-card">
-        <div class="rating-content">
-          <div class="logo-container">
+        <div class="row">
+          <div class="menu-card reveal">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
-              alt="Google Logo"
-              class="logo"
+              src="/img/dominik-martin-JYFmYif4n70-unsplash.jpg"
+              alt="Ayam Goreng"
+              class="menu-card-img"
             />
-            <h1 class="rating-value">4.0</h1>
-            <div class="stars">★★★★☆</div>
+            <h3 class="menu-card-title">Ayam Goreng</h3>
+            <p class="menu-card-price">IDR 20.000</p>
+            <button class="button">Beli</button>
           </div>
-          <div class="review">
-            <div class="user-info">
-              <div class="user-icon1"></div>
-              <div class="user-icon2"></div>
-              <div class="user-icon3"></div>
-              <div class="user-icon4"></div>
-            </div>
+          <div class="menu-card reveal">
+            <img
+              src="/img/charlesdeluvio-D-vDQMTfAAU-unsplash.jpg"
+              alt="Ayam Goreng"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Ayam Goreng</h3>
+            <p class="menu-card-price">IDR 20.000</p>
+            <button class="button">Beli</button>
+          </div>
+          <div class="menu-card reveal">
+            <img
+              src="/img/charlesdeluvio-D-vDQMTfAAU-unsplash.jpg"
+              alt="Ayam Goreng"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Ayam Goreng</h3>
+            <p class="menu-card-price">IDR 20.000</p>
+            <button class="button">Beli</button>
+          </div>
+          <div class="menu-card reveal">
+            <img
+              src="/img/charlesdeluvio-D-vDQMTfAAU-unsplash.jpg"
+              alt="Ayam Goreng"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Ayam Goreng</h3>
+            <p class="menu-card-price">IDR 20.000</p>
+            <button class="button">Beli</button>
+          </div>
+          <div class="menu-card-hidden reveal">
+            <img
+              src="/img/charlesdeluvio-D-vDQMTfAAU-unsplash.jpg"
+              alt="Ayam Goreng"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Ayam Goreng</h3>
+            <p class="menu-card-price">IDR 20.000</p>
+            <button class="button">Beli</button>
+          </div>
+          <div class="menu-card-hidden reveal">
+            <img
+              src="/img/charlesdeluvio-D-vDQMTfAAU-unsplash.jpg"
+              alt="Ayam Goreng"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Ayam Goreng</h3>
+            <p class="menu-card-price">IDR 20.000</p>
+            <button class="button">Beli</button>
+          </div>
+          <div class="menu-card-hidden reveal">
+            <img
+              src="/img/charlesdeluvio-D-vDQMTfAAU-unsplash.jpg"
+              alt="Ayam Goreng"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Ayam Goreng</h3>
+            <p class="menu-card-price">IDR 20.000</p>
+            <button class="button">Beli</button>
+          </div>
+          <div class="menu-card-hidden reveal">
+            <img
+              src="/img/charlesdeluvio-D-vDQMTfAAU-unsplash.jpg"
+              alt="Ayam Goreng"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Ayam Goreng</h3>
+            <p class="menu-card-price">IDR 20.000</p>
+            <button class="button">Beli</button>
+          </div>
+          <button id="seeMoreBtn" class="see_more reveal">See More</button>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="text reveal">
+          <h2>Tentang Kami</h2>
+        </div>
+        <div class="row">
+          <div class="image reveal">
+            <img src="/img/WARUNG ATUL.png" />
+          </div>
+          <div class="content reveal">
+            <h3>Warung Atul</h3>
             <p>
-              “The grilled chicken is delicious. Seep in deep. The price is also
-              cheap. You can repeat order here sometime. Most importantly,
-              payment can be made using QRIS.”
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis deserunt minus quia sunt a sapiente ipsam, sed
+              voluptate quaerat inventore magnam, asperiores soluta eligendi?
+              Unde quos dolorum quae magni sapiente!
             </p>
           </div>
         </div>
-      </div>
-      <div class="rating-card offset-card">
-        <div class="rating-content">
-          <div class="logo-container">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
-              alt="Google Logo"
-              class="logo"
-            />
-            <h1 class="rating-value">4.0</h1>
-            <div class="stars">★★★★☆</div>
-          </div>
-          <div class="review">
-            <div class="user-info">
-              <div class="user-icon1"></div>
-              <div class="user-icon2"></div>
-              <div class="user-icon3"></div>
-              <div class="user-icon4"></div>
+      </section>
+      <section class="review" id="review">
+        <div class="text reveal">
+          <h2>Rating dan Ulasan</h2>
+        </div>
+        <div class="row reveal">
+          <div class="carousel-track reveal">
+            <div class="card reveal">
+              <img src="/img/WARUNG ATUL (4).png" alt="" class="" />
+              <div class="rating-container">
+                <div class="rating-value">4.8</div>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+              <p>
+                “ini enakk bgtt,SOP nya seger,bebeknya juga enak semuanya enak
+                pertama kali order pasti akan balik lagi kesiniiiii♥️”
+              </p>
             </div>
-            <p>
-              “The grilled chicken is delicious. Seep in deep. The price is also
-              cheap. You can repeat order here sometime. Most importantly,
-              payment can be made using QRIS.”
-            </p>
+            <div class="card">
+              <img src="/img/WARUNG ATUL (4).png" alt="" class="" />
+              <div class="rating-container">
+                <div class="rating-value">4.8</div>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+              <p>
+                “ini enakk bgtt,SOP nya seger,bebeknya juga enak semuanya enak
+                pertama kali order pasti akan balik lagi kesiniiiii♥️”
+              </p>
+            </div>
+            <div class="card">
+              <img src="/img/WARUNG ATUL (4).png" alt="" class="" />
+              <div class="rating-container">
+                <div class="rating-value">4.8</div>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+              <p>
+                “ini enakk bgtt,SOP nya seger,bebeknya juga enak semuanya enak
+                pertama kali order pasti akan balik lagi kesiniiiii♥️”
+              </p>
+            </div>
+            <div class="card">
+              <img src="/img/WARUNG ATUL (4).png" alt="" class="" />
+              <div class="rating-container">
+                <div class="rating-value">4.8</div>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+              <p>
+                “ini enakk bgtt,SOP nya seger,bebeknya juga enak semuanya enak
+                pertama kali order pasti akan balik lagi kesiniiiii♥️”
+              </p>
+            </div>
+            <div class="card">
+              <img src="/img/WARUNG ATUL (4).png" alt="" class="" />
+              <div class="rating-container">
+                <div class="rating-value">4.8</div>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+              <p>
+                “ini enakk bgtt,SOP nya seger,bebeknya juga enak semuanya enak
+                pertama kali order pasti akan balik lagi kesiniiiii♥️”
+              </p>
+            </div>
+            <div class="card">
+              <img src="/img/WARUNG ATUL (4).png" alt="" class="" />
+              <div class="rating-container">
+                <div class="rating-value">4.8</div>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+              <p>
+                “ini enakk bgtt,SOP nya seger,bebeknya juga enak semuanya enak
+                pertama kali order pasti akan balik lagi kesiniiiii♥️”
+              </p>
+            </div>
+            <div class="card">
+              <img src="/img/WARUNG ATUL (4).png" alt="" class="" />
+              <div class="rating-container">
+                <div class="rating-value">4.8</div>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+              <p>
+                “ini enakk bgtt,SOP nya seger,bebeknya juga enak semuanya enak
+                pertama kali order pasti akan balik lagi kesiniiiii♥️”
+              </p>
+            </div>
+            <div class="card">
+              <img src="/img/WARUNG ATUL (4).png" alt="" class="" />
+              <div class="rating-container">
+                <div class="rating-value">4.8</div>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+              <p>
+                “ini enakk bgtt,SOP nya seger,bebeknya juga enak semuanya enak
+                pertama kali order pasti akan balik lagi kesiniiiii♥️”
+              </p>
+            </div>
+            <div class="card">
+              <img src="/img/WARUNG ATUL (4).png" alt="" class="" />
+              <div class="rating-container">
+                <div class="rating-value">4.8</div>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+              <p>
+                “ini enakk bgtt,SOP nya seger,bebeknya juga enak semuanya enak
+                pertama kali order pasti akan balik lagi kesiniiiii♥️”
+              </p>
+            </div>
+            <div class="card">
+              <img src="/img/WARUNG ATUL (4).png" alt="" class="" />
+              <div class="rating-container">
+                <div class="rating-value">4.8</div>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+              <p>
+                “ini enakk bgtt,SOP nya seger,bebeknya juga enak semuanya enak
+                pertama kali order pasti akan balik lagi kesiniiiii♥️”
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+      </section>
+      <section class="contact" id="contact">
+        <div class="text reveal">
+          <h2>Kontak Kami</h2>
+        </div>
+        <div class="row reveal">
+          <div class="maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.469819590594!2d107.34441577499135!3d-6.3331283936565015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6977d514230505%3A0xc77808037c96b153!2sWarung%20Atul!5e0!3m2!1sid!2sid!4v1734439995077!5m2!1sid!2sid"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="input">
+            <h3>Hubungi Kami</h3>
+            <form action="">
+              <div class="input-grup">
+                <i data-feather="user"></i>
+                <input type="text" placeholder="Nama" />
+              </div>
+              <div class="input-grup">
+                <i data-feather="mail"></i>
+                <input type="text" placeholder="Email" />
+              </div>
+              <div class="input-grup">
+                <i data-feather="phone"></i>
+                <input type="text" placeholder="Phone" />
+              </div>
+            </form>
+            <div class="sosmed">
+              <a
+                href="https://www.facebook.com/yourprofile"
+                target="_blank"
+                title="Facebook"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/yourprofile"
+                target="_blank"
+                title="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.twitter.com/yourprofile"
+                target="_blank"
+                title="Twitter"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Main -->
+    <!-- footer -->
+    <footer>
+      <p>&copy; 2024 Warung Atul. All Rights Reserved.</p>
+    </footer>
+    <!-- footer -->
     <script>
       feather.replace();
     </script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/reveal.js"></script>
+    <script src="/js/typing.js"></script>
   </body>
 </html>
